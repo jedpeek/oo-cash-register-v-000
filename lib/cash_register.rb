@@ -20,7 +20,7 @@ class CashRegister
     if employee == true
     @total = (@total*discount).to_f
     "Discount applied: #{@total}"
-    if @employee == false
+  elsif @employee == false
       return "There is no discount to apply"
   end
 
