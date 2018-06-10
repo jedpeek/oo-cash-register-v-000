@@ -2,10 +2,11 @@
 class CashRegister
   attr_accessor :total, :transaction, :items, :employee
 
-  def initialize
+  def initialize(@employee = false)
     @total = 0
     @items = []
-    
+    @employee = true
+
   end
 
   def add_item(title, price, quantities = 1)
