@@ -5,8 +5,7 @@ class CashRegister
   def initialize
     @total = 0
     @items = []
-    if @employee == true
-      self.apply_discount(discount)
+    
     end
   end
 
