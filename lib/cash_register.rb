@@ -20,7 +20,7 @@ class CashRegister
   end
 
   def apply_discount(employee)
-    if employee == true
+    if @employee == true
     @total = (@total*discount).to_f
     "Discount applied: #{@total}"
   elsif @employee == false
