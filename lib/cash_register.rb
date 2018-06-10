@@ -23,7 +23,7 @@ class CashRegister
     if @employee == true
     @total = (@total*(@discount/100)).to_f
     return "After the discount, the total comes to #{discount_total}"
-  elsif @employee == false
+  elsif @employee == nil
       return "There is no discount to apply"
     end
   end
