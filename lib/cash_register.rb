@@ -2,7 +2,7 @@
 class CashRegister
   attr_accessor :total, :transaction, :items, :employee
 
-  def initialize
+  def initialize(employee = false)
     @total = 0
     @items = []
     if @employee == true
@@ -22,7 +22,7 @@ class CashRegister
   end
 
   def apply_discount(discount)
-    @total = ()@total*discount).to_f
+    @total = (@total*discount).to_f
     return "Discount applied: #{@total}"
   end
 
