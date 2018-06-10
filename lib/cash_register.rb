@@ -1,5 +1,5 @@
 
-class Cash_Register
-  attr_accessor 
+class CashRegister
+  attr_accessor
 
 end
