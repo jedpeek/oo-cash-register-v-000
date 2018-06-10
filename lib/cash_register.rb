@@ -2,7 +2,7 @@
 class CashRegister
   attr_accessor :total, :transaction, :items, :employee
 
-  def initialize(employee = false)
+  def initialize(employee = false, discount = 0)
     @total = 0
     @items = []
     @employee = true
