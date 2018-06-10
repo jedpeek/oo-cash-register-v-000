@@ -22,7 +22,8 @@ class CashRegister
   end
 
   def apply_discount(discount)
-    (self.total*discount).to_f
+    @total = @total*discount).to_f
+    return "Discount applied: #{@total}"
   end
 
   def void_last_transaction
